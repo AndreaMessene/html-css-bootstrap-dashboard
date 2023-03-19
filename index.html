@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- collegamento css -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Libreria font-awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <nav>
+        <div class="d-flex  box-nav">
+            <div class="logo">
+                <img src="./assets/img/mobile-logo.png" width="100%" alt="">
+            </div>
+
+            <div class="box-search">
+                <div class="search">
+                    <div class="ricerca border p-1 border-opacity-80 rounded">
+                        <a class="border-0 "><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <input type="text" placeholder="Prova a cercare lezioni di Laravel">
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center align-items-center"> 
+                <i class="fa-solid fa-list"></i>
+                <i class="fa-solid fa-circle-question"></i>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+
+            <div class="campana d-flex justify-content-center align-items-center">
+                <div class="btn-group">
+                    <button type="button" class="btn" data-bs-toggle="dropdown">
+                        <i class="fa-solid fa-bell"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-lg-end" _mstvisible="0">
+                        <li _mstvisible="1">
+                            <button class="dropdown-item" type="button" _msttexthash="76804" _msthash="479"
+                                _mstvisible="2">Profilo</button>
+                        </li>
+                        <li _mstvisible="1">
+                            <button class="dropdown-item" type="button" _msttexthash="253708" _msthash="480"
+                                _mstvisible="2">Fatturazione</button>
+                        </li>
+                        <li _mstvisible="1">
+                            <button class="dropdown-item" type="button" _msttexthash="315393" _msthash="481"
+                                _mstvisible="2">Logout</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--Barra laterale  -->
+
+    <header class="bg-secondary d-flex carlo position-relative">
+
+        <div class="bar-y">
+            <ul class="nav d-flex align-items-center flex-column">
+                <li class="nav-item">
+                    <a href=""><i class="fa-solid fa-house"></i></a>
+                    <a class="d-none d-sm-inline-block" href="">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href=""><i class="fa-solid fa-chart-simple"></i></a>
+                    <a class="d-none d-sm-inline-block" href="">Stats</a>
+                </li>
+                <li class="nav-item">
+                    <a href=""><i class="fa-solid fa-signal"></i></a>
+                    <a class="d-none d-sm-inline-block" href="">Signals</a>
+                </li>
+            </ul>
+
+            <div class="ingranaggio position-absolute">
+                <a href=""><i class="fa-solid fa-gear"></i></a>
+            </div>
+
+        </div>
+
+        <!---------------- MAIN ------------------>
+        <main>
+
+            <div class="container-fluid">
+                <div class="row box-top-main">
+                    <div class="col-12 col-sm-4">
+                        <span>nuovo studente</span>
+                    </div>
+
+                    <div class="col-12 col-sm-4">
+                        <span>Boolean</span><span class="badge rounded-pill colore-pil">Piano Blaze</span>
+                        <div>
+                            <span class="badge rounded-pill colore-pil">3 App</span>
+                            <i class="fa-solid fa-angles-right"></i>
+                            <span class="badge rounded-pill colore-pil"><i class="fa-solid fa-plus"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-4">
+                        <p>Studente online negli utimi 30 minuti</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!------------- TABELLA --------------->
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-7">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="border border-bottom-0 pt-2">
+                                    <h3 class="ms-3">Prossime classi</h3>
+                                </div>
+                                <div class=" container border">
+                                    <table class="table caption-top table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th class="th-nome">Nome</th>
+                                                <th class="none">Data inizio</th>
+                                                <th class="none">ROI</th>
+                                                <th>Stato</th>
+                                                <th>Azioni</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <!-------- Riga 1 -------->
+                                            <tr>
+                                                <td>
+                                                    <img src="./assets/img/class-avatar.jpg" width="10%" alt="">
+                                                    <span>Classe 75</span>
+                                                </td>
+                                                <td class="none">
+                                                    <span>15 feb 2021</span> 
+                                                </td>
+                                                <td class="none"> 
+                                                    <span>20%</span> 
+                                                </td>
+                                                <td>
+                                                    <span class="badge rounded-pill text-bg-success">Success</span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="modifiche-tab rounded d-flex justify-content-center align-items-center">
+                                                            <a class="d-flex align-items-center" href="">
+                                                                <i class="fa-solid fa-pen rounded"></i>
+                                                            </a>
+                                                        </span>
+                                                        <span class="modifiche-tab rounded d-flex justify-content-center align-items-center">
+                                                            <a class="d-flex align-items-center" href="">
+                                                                <i class="fa-solid fa-trash-can rounded"></i>
+                                                            </a>
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-------- Riga 2 -------->
+                                            <tr>
+                                                <td>
+                                                    <img src="./assets/img/class-avatar.jpg" width="10%" alt="">
+                                                    <span>Classe 76</span>
+                                                </td>
+                                                <td class="none">
+                                                    <span>16 feb 2021</span> 
+                                                </td>
+                                                <td class="none"> 
+                                                    <span>20%</span> 
+                                                </td>
+                                                <td>
+                                                    <span class="badge rounded-pill text-bg-success">Success</span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="modifiche-tab rounded d-flex justify-content-center align-items-center">
+                                                            <a class="d-flex align-items-center" href="">
+                                                                <i class="fa-solid fa-pen rounded"></i>
+                                                            </a>
+                                                        </span>
+                                                        <span class="modifiche-tab rounded d-flex justify-content-center align-items-center">
+                                                            <a class="d-flex align-items-center" href="">
+                                                                <i class="fa-solid fa-trash-can rounded"></i>
+                                                            </a>
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-------- Riga 3 -------->
+                                            <tr>
+                                                <td>
+                                                    <img src="./assets/img/class-avatar.jpg" width="10%" alt="">
+                                                    <span>Classe 77</span>
+                                                </td>
+                                                <td class="none">
+                                                    <span>17 feb 2021</span> 
+                                                </td>
+                                                <td class="none"> 
+                                                    <span>20%</span> 
+                                                </td>
+                                                <td>
+                                                    <span class="badge rounded-pill text-bg-warning">sucess</span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="modifiche-tab rounded d-flex justify-content-center align-items-center">
+                                                            <a class="d-flex align-items-center" href="">
+                                                                <i class="fa-solid fa-pen rounded"></i>
+                                                            </a>
+                                                        </span>
+                                                        <span class="modifiche-tab rounded d-flex justify-content-center align-items-center">
+                                                            <a class="d-flex align-items-center" href="">
+                                                                <i class="fa-solid fa-trash-can rounded"></i>
+                                                            </a>
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-------- Riga 4 -------->
+                                            <tr>
+                                                <td>
+                                                    <img src="./assets/img/class-avatar.jpg" width="10%" alt="">
+                                                    <span>Classe 78</span>
+                                                </td>
+                                                <td class="none">
+                                                    <span>18 feb 2021</span> 
+                                                </td>
+                                                <td class="none"> 
+                                                    <span>20%</span> 
+                                                </td>
+                                                <td>
+                                                    <span class="badge rounded-pill text-bg-success">Success</span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="modifiche-tab rounded d-flex justify-content-center align-items-center">
+                                                            <a class="d-flex align-items-center" href="">
+                                                                <i class="fa-solid fa-pen rounded"></i>
+                                                            </a>
+                                                        </span>
+                                                        <span class="modifiche-tab rounded d-flex justify-content-center align-items-center">
+                                                            <a class="d-flex align-items-center" href="">
+                                                                <i class="fa-solid fa-trash-can rounded"></i>
+                                                            </a>
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-------- Riga 5 -------->
+                                            <tr>
+                                                <td>
+                                                    <img src="./assets/img/class-avatar.jpg" width="10%" alt="">
+                                                    <span>Classe 79</span>
+                                                </td>
+                                                <td class="none">
+                                                    <span>19 feb 2021</span> 
+                                                </td>
+                                                <td class="none"> 
+                                                    <span>20%</span> 
+                                                </td>
+                                                <td>
+                                                    <span class="badge rounded-pill text-bg-danger">falled</span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="modifiche-tab rounded d-flex justify-content-center align-items-center">
+                                                            <a class="d-flex align-items-center" href="">
+                                                                <i class="fa-solid fa-pen rounded"></i>
+                                                            </a>
+                                                        </span>
+                                                        <span class="modifiche-tab rounded d-flex justify-content-center align-items-center">
+                                                            <a class="d-flex align-items-center" href="">
+                                                                <i class="fa-solid fa-trash-can rounded"></i>
+                                                            </a>
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-------- Riga 6 -------->
+                                            <tr>
+                                                <td>
+                                                    <img src="./assets/img/class-avatar.jpg" width="10%" alt="">
+                                                    <span>Classe 80</span>
+                                                </td>
+                                                <td class="none">
+                                                    <span>20 feb 2021</span> 
+                                                </td>
+                                                <td class="none"> 
+                                                    <span>20%</span> 
+                                                </td>
+                                                <td>
+                                                    <span class="badge rounded-pill text-bg-success">Success</span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="modifiche-tab rounded d-flex justify-content-center align-items-center">
+                                                            <a class="d-flex align-items-center" href="">
+                                                                <i class="fa-solid fa-pen rounded"></i>
+                                                            </a>
+                                                        </span>
+                                                        <span class="modifiche-tab rounded d-flex justify-content-center align-items-center">
+                                                            <a class="d-flex align-items-center" href="">
+                                                                <i class="fa-solid fa-trash-can rounded"></i>
+                                                            </a>
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-------- Riga 7 -------->
+                                            <tr>
+                                                <td>
+                                                    <img src="./assets/img/class-avatar.jpg" width="10%" alt="">
+                                                    <span>Classe 81</span>
+                                                </td>
+                                                <td class="none">
+                                                    <span>21 feb 2021</span> 
+                                                </td>
+                                                <td class="none"> 
+                                                    <span>20%</span> 
+                                                </td>
+                                                <td>
+                                                    <span class="badge rounded-pill text-bg-danger">falled</span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="modifiche-tab rounded d-flex justify-content-center align-items-center">
+                                                            <a class="d-flex align-items-center" href="">
+                                                                <i class="fa-solid fa-pen rounded"></i>
+                                                            </a>
+                                                        </span>
+                                                        <span class="modifiche-tab rounded d-flex justify-content-center align-items-center">
+                                                            <a class="d-flex align-items-center" href="">
+                                                                <i class="fa-solid fa-trash-can rounded"></i>
+                                                            </a>
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-------- Riga 8 -------->
+                                            <tr>
+                                                <td>
+                                                    <img src="./assets/img/class-avatar.jpg" width="10%" alt="">
+                                                    <span>Classe 82</span>
+                                                </td>
+                                                <td class="none">
+                                                    <span>22 feb 2021</span> 
+                                                </td>
+                                                <td class="none"> 
+                                                    <span>20%</span> 
+                                                </td>
+                                                <td>
+                                                    <span class="badge rounded-pill text-bg-success">Success</span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="modifiche-tab rounded d-flex justify-content-center align-items-center">
+                                                            <a class="d-flex align-items-center" href="">
+                                                                <i class="fa-solid fa-pen rounded"></i>
+                                                            </a>
+                                                        </span>
+                                                        <span class="modifiche-tab rounded d-flex justify-content-center align-items-center">
+                                                            <a class="d-flex align-items-center" href="">
+                                                                <i class="fa-solid fa-trash-can rounded"></i>
+                                                            </a>
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <!----------- contenitore a tendina ------------>
+                            <div class="col-12 pt-3">
+                                <div class="border border-bottom-0 pt-2">
+                                    <h3 class="ms-3">F.A.Q.</h3>
+                                </div>
+                                <div class=" container border bg-white">
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <div>
+                                            <h2 class="accordion-header" id="flush-headingOne">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                                    aria-expanded="false" aria-controls="flush-collapseOne"
+                                                    _msttexthash="440440" _msthash="193"> Come aggiungere un
+                                                    nuvostudente?
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                                aria-labelledby="flush-headingOne"
+                                                data-bs-parent="#accordionFlushExample" _msthidden="1">
+                                                <div iv class="accordion-body" _msthidden="1">Placeholder content for
+                                                    this
+                                                    accordion, which is intended to demonstrate the class. This is the
+                                                    first
+                                                    item's accordion body.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h2 class="accordion-header" id="flush-headingTwo">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                                    aria-expanded="false" aria-controls="flush-collapseTwo"
+                                                    _msttexthash="440791" _msthash="195">Come posso accedere alle
+                                                    informazioni del mio account? </button>
+                                            </h2>
+                                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                                aria-labelledby="flush-headingTwo"
+                                                data-bs-parent="#accordionFlushExample" _msthidden="1">
+                                                <div class="accordion-body" _msthidden="1">Placeholder content for this
+                                                    accordion, which is intended to demonstrate the class. This is the
+                                                    second item's accordion body. Let's imagine this being filled with
+                                                    some
+                                                    actual content.</code>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h2 class="accordion-header" id="flush-headingThree">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                                    aria-expanded="false" aria-controls="flush-collapseThree"
+                                                    _msttexthash="441142" _msthash="197"> Posso usare questa dashboard
+                                                    da
+                                                    mobile? </button>
+                                            </h2>
+                                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                                aria-labelledby="flush-headingThree"
+                                                data-bs-parent="#accordionFlushExample" style="" _msthidden="1">
+                                                <div class="accordion-body" _msthidden="1">Placeholder content for this
+                                                    accordion, which is intended to demonstrate the class. This is the
+                                                    third
+                                                    item's accordion body. Nothing more exciting happening here in terms
+                                                    of
+                                                    content, but just filling up the space to make it look, at least at
+                                                    first glance, a bit more representative of how this would look in a
+                                                    real-world application.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--------------- check-box ---------------->
+
+                    <div class="col-12 col-md-5 pt-3">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="pt-3">
+                                    <div class=" border border-bottom-0">
+                                        <h3 class="ms-3">F.A.Q.</h3>
+                                    </div>
+                                    <div class="border bg-white">
+                                        <div class="container pt-3 pb-3">
+                                            <div class="border p-2 ps-3 rounded-top">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label>
+                                                    Default checkbox
+                                                </label>
+                                            </div>
+                                            <div class="border p-2 ps-3">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                                <label>
+                                                    Checked checkbox
+                                                </label>
+                                            </div>
+                                            <div class="border p-2 ps-3 rounded-bottom">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                                <label>
+                                                    Checked checkbox
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="pt-3">
+                                    <div class="card">
+                                        <img src="./assets/img/stats.jpeg" width="100%" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Utenti attivi</h5>
+                                            <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">Gennaio: 1200</li>
+                                            <li class="list-group-item">Febbraio: 800</li>
+                                            <li class="list-group-item">Marzo: 1500</li>
+                                        </ul>
+                                        <div class="card-body">
+                                            <a href="#" class="card-link">VIsualizza report approfondito</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--------------- ---------------->
+
+        </main>
+    </header>
+
+
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

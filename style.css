@@ -1,0 +1,167 @@
+.box-nav{
+    height: 60px;
+    width: 100%;
+}
+
+.logo{
+    width: 60px;
+    border: 0;
+}
+
+.box-search {
+    width: 70%;
+    font-size: 11px;
+    flex-grow: 1;
+    margin-top: 15px;
+
+}
+
+.ricerca{
+    background-color: #E5E5E5;
+}
+
+.search a{
+    color: black;
+}
+
+input{
+    width: 86%;
+    border: 0;
+    background-color: #E5E5E5;
+}
+
+.campana{
+    height: 100%;
+    width: 50px;
+}
+
+.campana button i{
+    color: #FF8F00;
+}
+
+.carlo{
+    width: 100%;
+    height: 600px;
+}
+
+.bar-y{
+    width: 13%;
+    height: 650px;
+    background-color: #262c39;
+    background-image: url(./assets/img/sidebar-bg.png);
+    background-repeat: no-repeat;
+}
+
+.bar-y ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.bar-y ul li{
+    margin-top: 10px;
+}
+
+.testo-i{
+    display: none;
+}
+
+.ingranaggio{
+    bottom: 20px;
+}
+
+.ingranaggio a{
+    color: white;
+}
+
+/************* main *********************/
+
+main{
+    width: 87%;
+    height: 650px;
+    background-color: #F7F7F7;
+    overflow: auto;
+}
+
+.box-top-main{
+    background-color: #1B72E8;
+}
+
+.main-superiore .col-12{
+    padding-top: 13px;
+}
+
+.fa-angles-right{
+    font-size: 12px;
+}
+
+.colore-pil{
+    background-color: #165BBA;
+}
+
+/************ tabella *************/
+
+caption{
+    background-color: #F7F7F7;
+}
+
+.th-nome{
+    
+}
+
+td img{
+    width: 15px;
+    height: 15px;
+}
+
+.modifiche-tab{
+    width: 25px;
+    height: 25px;
+    border: 1px solid gray;
+}
+
+td i{
+    font-size: 12px;
+    color: gray;
+}
+
+tbody tr td:last-child span:first-child{
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 426px){
+    
+    .none{
+        display: none;
+    }
+
+}
+
+/* sm */
+@media screen and (min-width: 576px){
+
+
+}
+
+/* md */
+@media screen and (min-width: 768px){
+
+
+}
+
+/* lg */
+@media screen and (min-width: 992px){
+
+
+}

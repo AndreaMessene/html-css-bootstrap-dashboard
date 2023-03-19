@@ -42,7 +42,7 @@
                 </div>
             </div>
 
-            <div class="d-flex justify-content-center align-items-center"> 
+            <div class="d-flex justify-content-center align-items-center">
                 <i class="fa-solid fa-list d-none d-md-inline-block ps-3 pe-1"></i>
                 <i class="fa-solid fa-circle-question d-none d-md-inline-block ps-2 pe-1"></i>
                 <i class="fa-solid fa-ellipsis-vertical d-none d-md-inline-block ps-2"></i>
@@ -50,7 +50,7 @@
 
             <div class="campana d-flex justify-content-center align-items-center">
                 <div class="btn-group">
-                    <button type="button" class="btn" data-bs-toggle="dropdown">
+                    <button type="button" class="btn border-0" data-bs-toggle="dropdown">
                         <i class="fa-solid fa-bell"></i>
                     </button>
                     <ul class="dropdown-menu dropdown-menu-lg-end" _mstvisible="0">
@@ -74,7 +74,7 @@
 
     <!--Barra laterale  -->
 
-    <header class="bg-secondary d-flex carlo">
+    <header class="bg-secondary d-flex">
 
         <div class="bar-y">
             <ul class="nav d-flex align-items-center flex-column">
@@ -103,88 +103,106 @@
         <main>
 
             <div class="container-fluid">
-                <div class="row box-top-main pt- d-flex align-items-center">
-                    <div class="col-12 col-sm-4">
-                        <span>nuovo studente</span>
-                        <!-- Offcanvas Bootstrap -->
-                        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
+                <div class="row box-top-main d-flex align-items-center">
+                    <div class="col-12 pb-3 pt-3 col-sm-4 order-sm-3">
+                        <span class="text-white">Nuovo studente</span>
+                        <!-- Botton pluss Offcanvas Bootstrap -->
+                        <button class="btn border-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus text-white"></i></button>
                         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                             <div class="offcanvas-header">
-                                <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                                <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                             </div>
                             <!-- contenuto credenziali -->
                             <div class="offcanvas-body">
                                 <div class="row g-3">
-                                    <div class="col">
-                                        <span>nome</span>
+                                    <div class="col-12 col-md-6">
+                                        <label for="inputName" class="form-label">Nome</label>
                                         <input type="text" class="form-control" aria-label="First name">
                                     </div>
-                                    <div class="col">
-                                        <span>Cognome</span>
+                                    <div class="col-12 col-md-6">
+                                        <label for="inputlastname" class="form-label">Cognome</label>
                                         <input type="text" class="form-control" aria-label="Last name">
                                     </div>
                                 </div>
-                            </div><!--  -->
-                            <form class="row g-3">
-                                <div class="col-md-6">
-                                  <label for="inputEmail4" class="form-label">Email</label>
-                                  <input type="email" class="form-control" id="inputEmail4">
-                                </div>
-                                <div class="col-md-6">
-                                  <label for="inputPassword4" class="form-label">Password</label>
-                                  <input type="password" class="form-control" id="inputPassword4">
-                                </div>
-                                <div class="col-12">
-                                  <label for="inputAddress" class="form-label">Address</label>
-                                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                                </div>
-                                <div class="col-12">
-                                  <label for="inputAddress2" class="form-label">Address 2</label>
-                                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                                </div>
-                                <div class="col-md-6">
-                                  <label for="inputCity" class="form-label">City</label>
-                                  <input type="text" class="form-control" id="inputCity">
-                                </div>
-                                <div class="col-md-4">
-                                  <label for="inputState" class="form-label">State</label>
-                                  <select id="inputState" class="form-select">
-                                    <option selected>Choose...</option>
-                                    <option>...</option>
-                                  </select>
-                                </div>
-                                <div class="col-md-2">
-                                  <label for="inputZip" class="form-label">Zip</label>
-                                  <input type="text" class="form-control" id="inputZip">
-                                </div>
-                                <div class="col-12">
-                                  <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                                    <label class="form-check-label" for="gridCheck">
-                                      Check me out
-                                    </label>
-                                  </div>
-                                </div>
-                                <div class="col-12">
-                                  <button type="submit" class="btn btn-primary">Sign in</button>
-                                </div>
-                              </form>
+                                <!--  -->
+                                <form class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="inputEmail" class="form-label">Email</label>
+                                        <div class="input-group flex-nowrap">
+                                            <span class="input-group-text" id="addon-wrapping">@</span>
+                                            <input type="text" class="form-control" aria-label="Username" aria-describedby="addon-wrapping">
+                                        </div>                                        
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="inputPassword4" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="inputPassword4">
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label for="inputEmail" class="form-label">Indirizzo Email</label>
+                                        <div class="input-group flex-nowrap">
+                                            <span class="input-group-text" id="addon-wrapping">@</span>
+                                            <input type="text" class="form-control" aria-label="Username" aria-describedby="addon-wrapping">
+                                        </div>                                        
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="inputPassword4" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="inputPassword4">
+                                    </div>
+
+                                    <div class="col-12">
+                                        <label for="inputAddress" class="form-label">Indirizzo</label>
+                                        <input type="text" class="form-control" id="inputAddress">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="inputCity" class="form-label">Cità</label>
+                                        <input type="text" class="form-control" id="inputCity">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="inputState" class="form-label">Stato</label>
+                                        <select id="inputState" class="form-select">
+                                            <option selected>Scegli...</option>
+                                            <option>...</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label for="inputZip" class="form-label">Cap</label>
+                                        <input type="text" class="form-control" id="inputZip">
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                                            <label class="form-check-label" for="gridCheck">
+                                                Seleziona per proseguire
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary">Salva</button>
+                                        <button type="submit" class="btn btn-primary">Svuota</button>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
+                    <!------- Fine credenziali ------->
 
-                    <div class="col-12 col-sm-4">
-                        <span>Boolean</span><span class="badge rounded-pill colore-pil">Piano Blaze</span>
+                    <div class="col-12 pb-3 pt-3 col-sm-4 order-sm-1">
+                        <span class="text-white d-inline-block pb-2">Boolean<span class="badge rounded-pill colore-pil">Piano Blaze</span></span>
                         <div>
                             <span class="badge rounded-pill colore-pil">3 App</span>
-                            <i class="fa-solid fa-angles-right"></i>
-                            <span class="badge rounded-pill colore-pil"><i class="fa-solid fa-plus"></i></span>
+                            <i class="fa-solid fa-angles-right text-white"></i>
+                            <span class="badge rounded-pill colore-pil d-md-none"><i class="fa-solid fa-plus"></i></span>
+                            <span class="badge rounded-pill colore-pil d-none d-md-inline-block">Boolean mobile app</span>
+                            <span class="badge rounded-pill colore-pil d-none d-md-inline-block">Boolean web app</span>
+                            <span class="badge rounded-pill colore-pil d-none d-md-inline-block">Boolean blog app</span>
                         </div>
                     </div>
 
-                    <div class="col-12 col-sm-4">
-                        <div>Studente online negli utimi 30 minuti</div>
-                        <div class="fs-4">125</div>
+                    <div class="col-12 pb-3 pt-3 col-sm-4 order-sm-2">
+                        <div class="text-white">Studente online negli utimi 30 minuti</div>
+                        <div class="fs-4 text-white">125</div>
                     </div>
                 </div>
             </div>
@@ -218,13 +236,13 @@
                                                     <span>Classe 75</span>
                                                 </td>
                                                 <td class="none">
-                                                    <span>15 feb 2021</span> 
+                                                    <span>15 feb 2021</span>
                                                 </td>
-                                                <td class="none"> 
-                                                    <span>20%</span> 
+                                                <td class="none">
+                                                    <span>20%</span>
                                                 </td>
                                                 <td>
-                                                    <span class="badge rounded-pill text-bg-success">Success</span>
+                                                    <span class="badge rounded-pill text-bg-success">Done</span>
                                                 </td>
                                                 <td>
                                                     <div class="d-flex align-items-center">
@@ -248,13 +266,13 @@
                                                     <span>Classe 76</span>
                                                 </td>
                                                 <td class="none">
-                                                    <span>16 feb 2021</span> 
+                                                    <span>16 feb 2021</span>
                                                 </td>
-                                                <td class="none"> 
-                                                    <span>20%</span> 
+                                                <td class="none">
+                                                    <span>20%</span>
                                                 </td>
                                                 <td>
-                                                    <span class="badge rounded-pill text-bg-success">Success</span>
+                                                    <span class="badge rounded-pill text-bg-success">Done</span>
                                                 </td>
                                                 <td>
                                                     <div class="d-flex align-items-center">
@@ -278,13 +296,13 @@
                                                     <span>Classe 77</span>
                                                 </td>
                                                 <td class="none">
-                                                    <span>17 feb 2021</span> 
+                                                    <span>17 feb 2021</span>
                                                 </td>
-                                                <td class="none"> 
-                                                    <span>20%</span> 
+                                                <td class="none">
+                                                    <span>20%</span>
                                                 </td>
                                                 <td>
-                                                    <span class="badge rounded-pill text-bg-warning">sucess</span>
+                                                    <span class="badge rounded-pill bg-warning">success</span>
                                                 </td>
                                                 <td>
                                                     <div class="d-flex align-items-center">
@@ -308,13 +326,13 @@
                                                     <span>Classe 78</span>
                                                 </td>
                                                 <td class="none">
-                                                    <span>18 feb 2021</span> 
+                                                    <span>18 feb 2021</span>
                                                 </td>
-                                                <td class="none"> 
-                                                    <span>20%</span> 
+                                                <td class="none">
+                                                    <span>20%</span>
                                                 </td>
                                                 <td>
-                                                    <span class="badge rounded-pill text-bg-success">Success</span>
+                                                    <span class="badge rounded-pill text-bg-success">Done</span>
                                                 </td>
                                                 <td>
                                                     <div class="d-flex align-items-center">
@@ -338,10 +356,10 @@
                                                     <span>Classe 79</span>
                                                 </td>
                                                 <td class="none">
-                                                    <span>19 feb 2021</span> 
+                                                    <span>19 feb 2021</span>
                                                 </td>
-                                                <td class="none"> 
-                                                    <span>20%</span> 
+                                                <td class="none">
+                                                    <span>20%</span>
                                                 </td>
                                                 <td>
                                                     <span class="badge rounded-pill text-bg-danger">falled</span>
@@ -368,13 +386,13 @@
                                                     <span>Classe 80</span>
                                                 </td>
                                                 <td class="none">
-                                                    <span>20 feb 2021</span> 
+                                                    <span>20 feb 2021</span>
                                                 </td>
-                                                <td class="none"> 
-                                                    <span>20%</span> 
+                                                <td class="none">
+                                                    <span>20%</span>
                                                 </td>
                                                 <td>
-                                                    <span class="badge rounded-pill text-bg-success">Success</span>
+                                                    <span class="badge rounded-pill text-bg-success">Done</span>
                                                 </td>
                                                 <td>
                                                     <div class="d-flex align-items-center">
@@ -398,10 +416,10 @@
                                                     <span>Classe 81</span>
                                                 </td>
                                                 <td class="none">
-                                                    <span>21 feb 2021</span> 
+                                                    <span>21 feb 2021</span>
                                                 </td>
-                                                <td class="none"> 
-                                                    <span>20%</span> 
+                                                <td class="none">
+                                                    <span>20%</span>
                                                 </td>
                                                 <td>
                                                     <span class="badge rounded-pill text-bg-danger">falled</span>
@@ -428,13 +446,13 @@
                                                     <span>Classe 82</span>
                                                 </td>
                                                 <td class="none">
-                                                    <span>22 feb 2021</span> 
+                                                    <span>22 feb 2021</span>
                                                 </td>
-                                                <td class="none"> 
-                                                    <span>20%</span> 
+                                                <td class="none">
+                                                    <span>20%</span>
                                                 </td>
                                                 <td>
-                                                    <span class="badge rounded-pill text-bg-success">Success</span>
+                                                    <span class="badge rounded-pill text-bg-success">Done</span>
                                                 </td>
                                                 <td>
                                                     <div class="d-flex align-items-center">

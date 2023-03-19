@@ -34,14 +34,9 @@ input{
     color: #FF8F00;
 }
 
-.carlo{
-    width: 100%;
-    height: 600px;
-}
-
 .bar-y{
     width: 13%;
-    height: 650px;
+    height: 640px;
     background-color: #262c39;
     background-image: url(./assets/img/sidebar-bg.png);
     background-repeat: no-repeat;
@@ -54,6 +49,18 @@ input{
 
 .bar-y ul li{
     margin-top: 10px;
+}
+
+.bar-y ul li:hover{
+    width: 5rem;
+    background-color: gray;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+
+.bar-y ul li:last-child:hover{
+    width: 6rem;
 }
 
 .testo-i{
@@ -74,7 +81,7 @@ input{
 
 main{
     width: 87%;
-    height: 650px;
+    height: 640px;
     background-color: #F7F7F7;
     overflow: auto;
 }

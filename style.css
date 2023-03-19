@@ -30,11 +30,6 @@ input{
     background-color: #E5E5E5;
 }
 
-.campana{
-    height: 100%;
-    width: 50px;
-}
-
 .campana button i{
     color: #FF8F00;
 }
@@ -66,7 +61,9 @@ input{
 }
 
 .ingranaggio{
-    bottom: 20px;
+    height: 80%;
+    color: white;
+
 }
 
 .ingranaggio a{
@@ -86,10 +83,6 @@ main{
     background-color: #1B72E8;
 }
 
-.main-superiore .col-12{
-    padding-top: 13px;
-}
-
 .fa-angles-right{
     font-size: 12px;
 }
@@ -102,10 +95,6 @@ main{
 
 caption{
     background-color: #F7F7F7;
-}
-
-.th-nome{
-    
 }
 
 td img{

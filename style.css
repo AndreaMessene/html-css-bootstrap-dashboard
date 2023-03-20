@@ -54,18 +54,6 @@ input{
     margin-top: 10px;
 }
 
-.bar-y ul li:hover{
-    width: 5rem;
-    background-color: gray;
-    display: flex;
-    justify-content: space-around;
-    border-radius: 20px;
-}
-
-.bar-y ul li:last-child:hover{
-    width: 6rem;
-}
-
 .testo-i{
     display: none;
 }
@@ -149,18 +137,29 @@ tbody tr td:last-child span:first-child{
 
 /* sm */
 @media screen and (min-width: 576px){
+    .bar-y ul li:hover{
+        width: 5rem;
+        background-color: gray;
+        display: flex;
+        justify-content: space-around;
+        border-radius: 20px;
+    }
+    
+    .bar-y ul li:last-child:hover{
+        width: 6rem;
+    }
 
 
 }
 
 /* md */
-@media screen and (min-width: 768px){
+/* @media screen and (min-width: 768px){
 
 
-}
+} */
 
 /* lg */
-@media screen and (min-width: 992px){
+/* @media screen and (min-width: 992px){
 
 
-}
+} */

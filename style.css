@@ -149,6 +149,13 @@ tbody tr td:last-child span:first-child{
         width: 6rem;
     }
 
+}
+
+@media screen and (max-width: 767px){
+
+    #offcanvasRight{
+        width: 100%;
+    }
 
 }
 

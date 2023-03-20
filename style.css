@@ -1,3 +1,5 @@
+
+/* nav */
 .box-nav{
     height: 60px;
     width: 100%;
@@ -34,6 +36,7 @@ input{
     color: #FF8F00;
 }
 
+/* barra laterale sx */
 .bar-y{
     width: 13%;
     height: 640px;
